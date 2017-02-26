@@ -1,0 +1,13 @@
+{% set dataroot = mainPart.textOnPic1 %}
+
+<section class="text">
+   <div style="background-image:url({{dataroot.backgroundImg}});" class="pic-asbg">
+	   <div class='text-rightbottom'>
+	    {% for paragraph in dataroot.paragraphs %}
+	    	<p>
+				{{ paragraph.word }}
+			</p>
+	    {% endfor %}
+	    </div>
+    <div>
+</section>

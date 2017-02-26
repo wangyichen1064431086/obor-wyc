@@ -1,0 +1,13 @@
+{% set dataroot = mainPart.textAroundPic %}
+
+<section class = "maincompo textaroundpic" id="textAroundPic">
+    {% for image in dataroot.images %}
+		<img src={{image.src}} alt={{image.alt}}>
+    {% endfor %}
+   
+    {% for paragraph in dataroot.paragraphs %}
+    	<p>
+			{{ paragraph.word }}
+		</p>
+    {% endfor %}
+</section>

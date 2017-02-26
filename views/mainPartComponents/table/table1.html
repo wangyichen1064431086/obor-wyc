@@ -1,0 +1,31 @@
+{% set dataroot = mainPart.table1 %}
+<section class="maincompo" id="tableArea1">
+	<table id="table1" class="table">
+		<caption>
+			{{ dataroot.caption }}
+		</caption>
+		<thead>
+			<tr>
+				{% for item in dataroot.thead %}
+				<th>{{item.th}}</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for trItem in dataroot.tbody %}
+			<tr>
+				<th>{{trItem.th}}</th>
+
+				
+				{% for tdItem in trItem.tds %}
+				<td>{{tdItem.td}}</td>
+				{% endfor %}
+				
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<div class="datasource">
+		<p>{{mainPart.table1.dataSource}}</p>
+	</div>
+</section>

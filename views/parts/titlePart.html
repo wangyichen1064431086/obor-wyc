@@ -1,0 +1,31 @@
+<header class = "titlepart" id="titlePart">
+ 	{% if titlePart.mainTitle %}
+	<h1 class="mainTitle">
+		{{titlePart.mainTitle}}
+	</h1>
+	{% endif %}
+
+	{% if titlePart.subTitle %}
+	<h2 class="subTitle">
+		{{titlePart.subTitle}}
+	</h2>
+	{% endif %}
+
+	{% if titlePart.dateTime %}
+	<time class="dateTime">
+		{{titlePart.dateTime}}
+	</time>	
+	{% endif %}
+
+	{% if titlePart.authorInfo %}
+	<p class="authorInfo">
+		{{titlePart.authorInfo}}
+	</p>
+	{% endif %}
+
+	{% if titlePart.abstract %}
+	<p class="abstract">
+		{{titlePart.abstract}}
+	</p>
+	{% endif %}
+</header>

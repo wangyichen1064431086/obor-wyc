@@ -1,0 +1,65 @@
+{% set dataroot = mainPart %}
+<article id="mainPart">
+	{% if dataroot.video1 %}
+		{% set videoSectionId = "vsAtStart" %}
+		{% set videoId= "videoAtStart" %}
+		{% include "mainPartComponents/multimedia/video1.html" %}
+	{% endif %}
+	
+	{% if dataroot.pureText1 %}
+		{% include "mainPartComponents/text/pureText1.html" %}
+	{% endif %}
+
+	{% if dataroot.textAroundPic %}
+		{% include "mainPartComponents/picAndText/textAroundPic.html" %}
+	{% endif %}
+
+	{% if dataroot.lineGraph1 %}
+		{% include "mainPartComponents/chart/lineGraph1.html" %}
+	{% endif %}
+
+	{% if dataroot.lineGraph2 %}
+		{% include "mainPartComponents/chart/lineGraph2.html" %}
+	{% endif %}
+
+	{#
+	{% if dataroot.textOnPic1 %}
+		{% include "mainPartComponents/picAndText/textOnPic.html" %}
+	{% endif %}
+	#}
+
+	{% if dataroot.pureText2 %}
+		{% include "mainPartComponents/text/pureText2.html" %}
+	{% endif %}
+
+	{% if dataroot.barGraph2 %}
+		{% include "mainPartComponents/chart/barGraph2.html" %}
+	{% endif %}
+
+	{% if dataroot.mapGraph1 %}
+		{% include "mainPartComponents/chart/mapGraph1.html" %}
+	{% endif %}
+
+
+
+	{% if dataroot.pureText3 %}
+		{% include "mainPartComponents/text/pureText3.html" %}
+	{% endif %}
+
+	{% if dataroot.table1 %}
+		{% include "mainPartComponents/table/table1.html" %}
+	{% endif %}
+
+	{% if dataroot.pureText4 %}
+		{% include "mainPartComponents/text/pureText4.html" %}
+	{% endif %}
+
+	{% if dataroot.video1 %}
+		{% set videoSectionId = "vsAtEnd" %}
+		{% set videoId= "videoAtEnd" %}
+		{% include "mainPartComponents/multimedia/video1.html" %}
+
+	{% endif %}
+
+	
+</article>

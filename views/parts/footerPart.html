@@ -1,0 +1,21 @@
+<footer class="footerpart" id="footerPart">
+	<div class="footer-content">
+		{% if footerPart.originArti %}
+		<p>
+			原文链接：
+			<a href="{{footerPart.ftwebsite}}" class="nounderline" target="_blank">{{footerPart.ft}}</a>
+			<a href="{{footerPart.originArti}}" target="_blank">{{footerPart.originArti}}</a>
+		</p>
+		{% endif %}
+		{% if footerPart.originAuthors %}
+		<p>
+			原文作者：{{footerPart.originAuthors}}
+		</p>
+		{% endif %}
+		{% if footerPart.specialThanksto %}
+		<p>
+			特别鸣谢：{{footerPart.specialThanksto}}
+		</p>
+		{% endif %}
+	</div>
+</footer>

@@ -1,0 +1,20 @@
+{
+  "name": "datanews-wyc",
+  "description": "\"datanews making application\"",
+  "main": "gulpfile.js",
+  "authors": [
+    "Wang Yichen"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wangyichen1064431086/datanews-wyc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "o-grid": "^4.3.0"
+  }
+}
